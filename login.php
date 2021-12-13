@@ -23,13 +23,15 @@ if (!empty($_POST)) {
 			
 			if( password_verify($password, $member['password']) ) {
 				// ログイン成功
+				session_regenerate_id(true); // 現在のセッションIDを新しく生成したものと置き換える
+				                             // セッションハイジャック対策
 				$_SESSION['id'] = $member['id'];
 				$_SESSION['time'] = time();
 
 				// ログイン情報を記録する
 				if ($_POST['save'] == 'on') {
 				    setcookie('email', $_POST['email'], time()+60*60*24*14);
-				    setcookie('password', $_POST['password'], time()+60*60*24*14);
+//				    setcookie('password', $_POST['password'], time()+60*60*24*14);
 				}
 				header('Location: index.php');
 				exit();
