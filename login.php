@@ -68,7 +68,7 @@ if (!empty($_POST)) {
 			<div id="lead">
 				<p>メールアドレスとパスワードを記入してログインしてください。</p>
 				<p>入会手続きがまだの方はこちらからどうぞ。</p>
-				<p>&raquo;<a href="join/">入会手続きをする</a></p>
+				<p>&raquo;<a href="input.php">会員登録手続きをする</a></p>
 			</div>
 			<form action="" method="POST">
 				<dl>
