@@ -33,7 +33,7 @@ if (!empty($_POST)) {
 				    setcookie('email', $_POST['email'], time()+60*60*24*14);
 				    setcookie('password', $_POST['password'], time()+60*60*24*14);
 				}
-				header('Location: index2.php');   //会員トップページ
+				header('Location: index.php');
 				exit();
             }else{
 				// ログイン認証失敗
@@ -62,13 +62,13 @@ if (!empty($_POST)) {
 <body>
 	<div id="wrap">
 		<div id="head">
-			<h1>ログイン画面</h1>
+			<h1>ログインする</h1>
 		</div>
 		<div id="content">
 			<div id="lead">
 				<p>メールアドレスとパスワードを記入してログインしてください。</p>
 				<p>入会手続きがまだの方はこちらからどうぞ。</p>
-				<p>&raquo;<a href="input.php">会員登録手続きをする</a></p>
+				<p>&raquo;<a href="join/">入会手続きをする</a></p>
 			</div>
 			<form action="" method="POST">
 				<dl>
