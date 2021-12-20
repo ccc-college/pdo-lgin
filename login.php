@@ -31,8 +31,9 @@ if (!empty($_POST)) {
 				// ログイン情報を記録する
 				if ($_POST['save'] == 'on') {
 				    setcookie('email', $_POST['email'], time()+60*60*24*14);
+				    setcookie('password', $_POST['password'], time()+60*60*24*14);
 				}
-				header('Location: index.php');
+				header('Location: index1.php');   //会員トップページ
 				exit();
             }else{
 				// ログイン認証失敗
