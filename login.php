@@ -61,7 +61,7 @@ if (!empty($_POST)) {
 <body>
 	<div id="wrap">
 		<div id="head">
-			<h1>ログインする</h1>
+			<h1>ログイン画面</h1>
 		</div>
 		<div id="content">
 			<div id="lead">
